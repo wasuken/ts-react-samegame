@@ -52,7 +52,7 @@ function App() {
   return (
     <div className="App" style={{ display: "flex" }}>
       <div>
-        <div style={{ paddingLeft: "10px" }}>
+        <div style={{ paddingLeft: "30px" }}>
           {[...Array(width)].map((x, i) => (
             <div style={{ display: "inline-block", width: `25px` }} key={i}>
               {i + 1}
