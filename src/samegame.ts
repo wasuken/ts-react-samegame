@@ -26,10 +26,10 @@ export function genMap(w: number, h: number, numOfTypes: number): SameGameMap {
 
 // ptrの隣接座標を生成する。
 // 中心点を除いた十字位置のみを隣接座標とする
-function getAroundPtrs(ptr: SameGamePoint): SameGamePoint[][] {
+function getAroundPtrs(ptr: SameGamePoint): SameGamePoint[] {
   let ptrs: SameGamePoint[] = [];
   for (let i = -1; i < 2; i++) {
-    const y: SameGamePoint = ptr.y + i;
+    const y: number = ptr.y + i;
     for (let j = -1; j < 2; j++) {
       const x = ptr.x + j;
       const p: SameGamePoint = { x, y };
